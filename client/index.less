@@ -1,20 +1,49 @@
+body{
+  background-image: url('/assets/pyramids.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: helvetica;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+button{
+  display: inline-block;
+  font-size: 35px;
+  width: 100px;
+  color: white;
+  background-color: rgba(220, 72, 36, 0.7);
+}
 #container{
-  margin: 0 auto;
+  margin: 0 25px;
   text-align: center;
+  font-size: 25px;
+}
+#title{
+  color: black;
 }
 #controls{
-  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgba(220, 220, 220, 0.9);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+#cylinders{
+  font-size: 25px;
 }
 #towercontainer{
   display: inline;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .tower{
   width: 200px;
-  height: 390px;
-  border: 2px blue solid;
+  height: 395px;
+  border: 6px rgba(220, 220, 220, 0.9) solid;
+  border-radius: 10px;
+  margin: 0 20px;
   display: inline-block;
   position: relative;
+  -webkit-box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.7);
 }
 .cylinderwrapper{
   vertical-align: bottom;
@@ -25,11 +54,19 @@
 }
 .cylinder{
   border: 2px black solid;
+  border-radius: 5px;
+  color: white;
   margin: 0 auto;
   text-align: center;
   padding-top: 15px;
   height: 30px;
 }
 .selected{
-  border: 2px red solid;
+  border: 6px rgba(220, 72, 36, 1.0) dotted;
+}
+#moves, #bestmoves{
+  color: rgba(137, 178, 13, 0.6);
+  display: inline;
+  margin: 0 25px;
+  display: none;
 }

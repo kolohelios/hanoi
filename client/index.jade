@@ -2,16 +2,23 @@ doctype html
 html
   head
     meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1, minimal-ui')
     title Tower of Hanoi
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     #container
-      h1 Tower of Hanoi
       #controls
-        input#cylinders(type='number' value='3' autofocus)
-        button#start Start!
+        h1#title Tower of Hanoi
+        label.cyl Number of discs:
+        input#cylinders.cyl(type='number' value='3' min='3' max='8' autofocus)
+        p: button#start Start!
+        p#moves.move Moves: 
+          span 0
+        p#bestmoves.move Least possible moves: 
+          span 0
+        p#winningmessage &nbsp;
       #towercontainer
         #t1.tower
           .cylinderwrapper
