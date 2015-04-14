@@ -1,18 +1,35 @@
-.cylinder{
-  border: 2px black solid;
-  height: 30px;
+#container{
   margin: 0 auto;
   text-align: center;
 }
-.tower{
-  width: 25%;
-  height: 550px;
-  border: 2px blue solid;
-  display: inline-block;
+#controls{
+  margin-bottom: 50px;
 }
 #towercontainer{
-  margin-top: 50px;
   display: inline;
   margin: 0 auto;
-  min-height: 600px;
+}
+.tower{
+  width: 200px;
+  height: 390px;
+  border: 2px blue solid;
+  display: inline-block;
+  position: relative;
+}
+.cylinderwrapper{
+  vertical-align: bottom;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+.cylinder{
+  border: 2px black solid;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  height: 30px;
+}
+.selected{
+  border: 2px red solid;
 }
