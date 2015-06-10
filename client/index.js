@@ -67,7 +67,7 @@ function moveHandler(){
 
 function checkForVictoryCondition(){
   if($('#t3').find('.cylinder').length === $('.cylinder').length){
-    var winMessage = (parseInt($('#moves').find('span').text)) <= (parseInt($('#bestmoves').find('span').text)) ? ' with the least possible moves!' : '!';
+    var winMessage = ((parseInt($('#moves').find('span').text())) === (parseInt($('#bestmoves').find('span').text()))) ? ' with the least possible moves!' : '!';
     $('#winningmessage').text('Congratulations, you won' + winMessage);
     $('#t1').off('click', moveHandler);
     $('#t2').off('click', moveHandler);
